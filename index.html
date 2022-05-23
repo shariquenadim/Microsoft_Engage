@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon image -->
+    <link rel="icon" type="image/x-icon" href="images/fav_logo.svg">
+
+    <!-- font cdn connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Looking 4</title>
+
+    <!-- styling for the landing page -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(6, 3, 30);
+            max-height: 100vh;
+            overflow: hidden;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .header {
+            width: 100%;
+            min-height: 10vh;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 8px 64px;
+        }
+        
+        .logo {
+            width: 64px;
+        }
+        
+        .logo_text {
+            font-family: 'Kaushan Script', cursive;
+            text-decoration: none;
+            font-size: 32px;
+            color: white;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            min-height: 80vh;
+            height: 100%;
+        }
+        
+        main section {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .side_image {
+            height: 100%;
+            max-height: 100vh;
+            transform: translate(0, -64px);
+        }
+        
+        .control_section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0px 64px;
+        }
+        
+        .controls button {
+            padding: 10px 24px;
+            outline: none;
+            font-size: 24px;
+            margin: 12px 12px;
+            border-radius: 24px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+        }
+        
+        .controls button:hover {
+            background: white;
+            color: rgb(6, 3, 30);
+        }
+        
+        .add_data {
+            margin-top: 52px;
+            display: flex;
+            justify-content: center;
+            padding: 24px;
+        }
+        
+        .add_data .copy {
+            width: 100%;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading part -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">
+                <img class="logo" src="images/logo_white.svg">
+            </a>
+            <a class="logo_text" href="index.html">Looking 4</a>
+        </nav>
+    </header>
+    <!-- about the project link left -->
+
+    <!-- main container -->
+    <main>
+        <section class="control_section">
+            <div class="controls">
+                <button>Register</button>
+                <button>Login</button>
+            </div>
+
+            <!-- copywrite section -->
+            <div class="add_data">
+                <p class="copy"><span id="copy-right-year">
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+          </span> &copy;
+                    <a href="https://www.shariquenadim.tk/" target="_blank">Sharique Nadim</a>
+                    <br> Project under <span style="color: gold;">
+                        Microsoft Engage
+          </span>
+
+                </p>
+
+            </div>
+
+        </section>
+        <section class="image_section">
+            <img class="side_image" src="images/cyborg_white.png" alt="">
+        </section>
+    </main>
+
+
+</body>
+
+</html>
