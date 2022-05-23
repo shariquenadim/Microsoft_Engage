@@ -31,6 +31,7 @@ canvas {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .result-container>div {
@@ -41,20 +42,15 @@ canvas {
     text-transform: capitalize;
 }
 
-#age {
-    background: #1e94be;
-}
+#age {}
 
-#emotion {
-    background: #8a1025;
-}
+#emotion {}
 
-#gender {
-    background: #62d8a5;
-}
+#gender {}
 
 video {
     width: 100%;
+    border: 3px solid #fefefe;
 }
 
 .header {

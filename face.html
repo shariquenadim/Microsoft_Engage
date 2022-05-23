@@ -32,13 +32,34 @@
 
     </header>
     <div class="container">
-        <video id="video" height="500" width="500" autoplay muted></video>
+
+        <video id="video" height="400" width="600" autoplay muted></video>
     </div>
     <div class="result-container">
-        <div id="emotion">Emotion</div>
         <div id="gender">Gender</div>
-        <div id="age">Age</div>
+        <div id="age">Estimated Age</div>
+        <h2 class="message">Hello! dear,
+            <script type="text/javascript">
+                document.write();
+                var day = new Date();
+                var hr = day.getHours();
+                if (hr >= 0 && hr < 12) {
+                    document.write("what a lovely Morning...");
+                } else if (hr == 12) {
+                    document.write("Good Noon..");
+                } else if (hr >= 12 && hr <= 17) {
+                    document.write("Good Afternoon..");
+                } else {
+                    document.write("what a lovely Evening...");
+                }
+                document.write();
+            </script>
+            <div id="emotion">Emotion</div>
+
+        </h2>
     </div>
+
+
 
     <script src="./js/face-api.min.js"></script>
     <script src="./js/main.js"></script>

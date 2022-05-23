@@ -39,7 +39,7 @@ video.addEventListener("playing", () => {
     const displaySize = { width: video.width, height: video.height };
     faceapi.matchDimensions(canvas, displaySize);
 
-    setInterval(async () => {
+    setInterval(async() => {
         const detections = await faceapi
             .detectSingleFace(video, new faceapi.TinyFaceDetectorOptions())
             .withFaceLandmarks()
@@ -62,9 +62,9 @@ video.addEventListener("playing", () => {
             const emotion = Object.keys(expressions).filter(
                 item => expressions[item] === maxValue
             );
-            document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
+            document.getElementById("age").innerText = `Approx age - ${interpolatedAge}`;
             document.getElementById("gender").innerText = `Gender - ${gender}`;
-            document.getElementById("emotion").innerText = `Emotion - ${emotion[0]}`;
+            document.getElementById("emotion").innerText = `OH! You look ${emotion[0]}...`;
         }
     }, 10);
 });
