@@ -47,9 +47,10 @@
             display: flex;
             align-items: center;
             padding: 8px 64px;
+            gap: 32px;
         }
         
-        .logo {
+        .navbar .logo {
             width: 64px;
         }
         
@@ -58,14 +59,6 @@
             text-decoration: none;
             font-size: 32px;
             color: white;
-        }
-        
-        .nav_menu {
-            font-family: 'Kaushan Script';
-            text-decoration: none;
-            font-size: 32px;
-            color: white;
-            text-align: right;
         }
         
         main {
@@ -94,7 +87,7 @@
             padding: 0px 64px;
         }
         
-        .controls button {
+        .controls a {
             padding: 10px 24px;
             outline: none;
             font-size: 24px;
@@ -107,13 +100,13 @@
             transition: all 0.5s ease-out;
         }
         
-        .controls button:hover {
+        .controls a:hover {
             background: white;
             color: rgb(6, 3, 30);
         }
         
         .add_data {
-            margin-top: 72px;
+            margin-top: 62px;
             display: flex;
             justify-content: center;
             padding: 24px;
@@ -123,6 +116,11 @@
             width: 100%;
             line-height: 1.6;
         }
+        
+        .logo_cont {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -130,12 +128,15 @@
     <!-- heading part -->
     <header class="header">
         <nav class="navbar">
-            <a href="index.html">
-                <img class="logo" src="images/logo_white.svg">
-            </a>
-            <a class="logo_text" href="index.html">Looking 4</a>
-        </nav>
+            <div class="logo_cont">
 
+                <a href="index.html">
+                    <img class="logo" src="images/logo_white.svg">
+                </a>
+                <a class="logo_text" href="index.html">Looking 4</a>
+            </div>
+            <a href="#">About the project</a>
+        </nav>
     </header>
     <!-- about the project link left -->
 
@@ -143,8 +144,8 @@
     <main>
         <section class="control_section">
             <div class="controls">
-                <button>Register</button>
-                <button>Login</button>
+                <a href="#">Register</a>
+                <a href="./face.html">Login</a>
             </div>
 
             <!-- copywrite section -->

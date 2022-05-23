@@ -1,52 +1,80 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  background: #2f2f2f;
-  width: calc(100% - 33px);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(6, 3, 30);
+    width: calc(100% - 33px);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 canvas {
-  position: absolute;
+    position: absolute;
 }
+
 .container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
+
 .result-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.result-container > div {
-  font-size: 1.3rem;
-  padding: 0.5rem;
-  margin: 5px 0;
-  color: white;
-  text-transform: capitalize;
+
+.result-container>div {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 5px 0;
+    color: white;
+    text-transform: capitalize;
 }
+
 #age {
-  background: #1e94be;
+    background: #1e94be;
 }
+
 #emotion {
-  background: #8a1025;
+    background: #8a1025;
 }
+
 #gender {
-  background: #62d8a5;
+    background: #62d8a5;
 }
+
 video {
-  width: 100%;
+    width: 100%;
 }
-header {
-  background: #42a5f5;
-  color: white;
-  width: 100%;
-  font-size: 2rem;
-  padding: 1rem;
-  font-size: 2rem;
+
+.header {
+    width: 100%;
+    min-height: 10vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 8px 64px;
+}
+
+.logo {
+    width: 64px;
+}
+
+.logo_text {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
 }
