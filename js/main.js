@@ -20,7 +20,7 @@ function startVideo() {
 
 function screenResize(isScreenSmall) {
     if (isScreenSmall.matches) {
-        // If media query matches
+
         video.style.width = "320px";
     } else {
         video.style.width = "500px";
